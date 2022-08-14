@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgrd"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lay_btn"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/img_scan_type"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_duckscan_sqr" />
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/ic_app_name" />
+
+
+                    <LinearLayout
+                        android:id="@+id/lay_maker_but3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/btn_info_feesback"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_eff_info_feedback" />
+
+
+
+                        <ImageButton
+                            android:id="@+id/btn_info_rateme"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_eff_info_rateme" />
+
+                    </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/lay_maker_but2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btn_info_apps"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn_eff_info_safisoft_apps" />
+
+                    <ImageButton
+                        android:id="@+id/btn_info_facebook"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/btn_eff_info_safisoft_facebook" />
+
+                </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/lay_maker_but4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <ImageButton
+                            android:id="@+id/btn_info_permissions"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_eff_info_permissions" />
+
+                        <ImageButton
+                            android:id="@+id/btn_info_youtube"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/btn_eff_info_safisoft_youtube" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/lay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lay_click_exit"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/btn_Settings"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/btn_eff_settings" />
+
+        <ImageButton
+            android:id="@+id/btn_Qrcode_Maker"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/btn_eff_qrcode" />
+
+        <ImageButton
+            android:id="@+id/btn_DuckScan"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/btn_eff_duckscan" />
+
+        <ImageButton
+            android:id="@+id/btn_History"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/btn_eff_history" />
+
+        <ImageButton
+            android:id="@+id/btn_Fav"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/btn_eff_fav" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lay_click_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_duck_fullbody" />
+
+        <TextView
+            android:id="@+id/txt_lay_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/duck"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
